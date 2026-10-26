@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura no Espaço - Ciências</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" id="btn-home">🏠 Início</a>
+
+    <div class="page-container">
+        <div class="game-header">
+            <h1>🪐 Aventura no Espaço</h1>
+            <p>Quanto você sabe sobre o Sistema Solar?</p>
+        </div>
+
+        <div class="score-board">
+            <div class="score-item">⭐ Pontos: <span id="science-score">0</span></div>
+            <div class="score-item">❓ Pergunta: <span id="science-question-num">1</span>/8</div>
+        </div>
+
+        <div class="question-box" id="science-question-box">
+            <div class="planet-emoji" id="science-emoji">🌍</div>
+            <div class="science-question" id="science-question" style="font-size:1.4rem; font-weight:600; margin-bottom:25px;"></div>
+            <div class="science-options" id="science-options"></div>
+            <div class="feedback" id="science-feedback"></div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        startScienceGame();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Brasil - Geografia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" id="btn-home">🏠 Início</a>
+
+    <div class="page-container">
+        <div class="game-header">
+            <h1>🗺️ Explorando o Brasil</h1>
+            <p>Teste seus conhecimentos de Geografia!</p>
+        </div>
+
+        <div class="score-board">
+            <div class="score-item">⭐ Pontos: <span id="geo-score">0</span></div>
+            <div class="score-item">❓ Pergunta: <span id="geo-question-num">1</span>/8</div>
+        </div>
+
+        <div class="question-box" id="geo-question-box">
+            <div class="geo-emoji" id="geo-emoji">🇧🇷</div>
+            <div class="science-question" id="geo-question" style="font-size:1.4rem; font-weight:600; margin-bottom:25px;"></div>
+            <div class="geo-options" id="geo-options"></div>
+            <div class="feedback" id="geo-feedback"></div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        startGeoGame();
+    </script>
+</body>
+</html>

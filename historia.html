@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem no Tempo - História</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" id="btn-home">🏠 Início</a>
+
+    <div class="page-container">
+        <div class="game-header">
+            <h1>📜 Viagem no Tempo</h1>
+            <p>Quanto você sabe sobre a História do Brasil?</p>
+        </div>
+
+        <div class="score-board">
+            <div class="score-item">⭐ Pontos: <span id="hist-score">0</span></div>
+            <div class="score-item">❓ Pergunta: <span id="hist-question-num">1</span>/8</div>
+        </div>
+
+        <div class="question-box" id="hist-question-box">
+            <div class="hist-emoji" id="hist-emoji">📜</div>
+            <div class="science-question" id="hist-question" style="font-size:1.4rem; font-weight:600; margin-bottom:25px;"></div>
+            <div class="hist-options" id="hist-options"></div>
+            <div class="feedback" id="hist-feedback"></div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        startHistGame();
+    </script>
+</body>
+</html>
